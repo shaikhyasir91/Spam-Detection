@@ -14,7 +14,7 @@ The dataset `spam.csv` contains labeled messages. Each message is classified as 
 
 ## Dependencies
 
-- Python 3.x
+- Python
 - pandas
 - numpy
 - scikit-learn
