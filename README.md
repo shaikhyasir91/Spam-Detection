@@ -41,9 +41,29 @@ python app.py
 ```
 Open your browser and go to `http://127.0.0.1:5000/` to use the web interface for spam detection.
 
-## Model Description
+## Code Explanation
+Data Loading and Preprocessing:
 
-The model uses a TF-IDF vectorizer for text feature extraction and a Multinomial Naive Bayes classifier for classification. The dataset is split into training and testing sets, and the model's performance is evaluated using metrics such as accuracy, precision, recall, and F1-score.
+The dataset is loaded using pandas and unnecessary columns are dropped.
+The messages and their corresponding labels are extracted.
+Data Visualization:
+
+A count plot visualizes the distribution of spam and ham messages.
+Feature Extraction:
+
+CountVectorizer is used to convert the text data into a matrix of token counts.
+Model Training:
+
+The data is split into training and testing sets using train_test_split.
+A MultinomialNB classifier is trained on the training set.
+Prediction and Evaluation:
+
+The model predicts the labels for the test set.
+The accuracy of the model is evaluated using accuracy_score.
+Real-time Prediction:
+
+The user can input a message, and the model will predict whether it's spam or ham.
+
 
 ## Contribution
 
